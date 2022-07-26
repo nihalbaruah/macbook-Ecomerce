@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Macbook</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="icon" type="image" sizes="32x32" href="images/apple-icon.png" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+        <header>
+          <a href="#" class="logo animate__animated animate__flip animate__delay-3s"><img src="images/logo.png" width="150" /></a>
+          <ul>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#enq-form">Enquiry</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </header>
+        <div class="content">
+          <div class="inside animate__animated animate__jackInTheBox">
+            <h2><span>Macbook</span><br> Don't take it Lightly</h2>
+            <div>
+                <div class="typewriter">
+                  <div class="typewriter-text">
+                The Futuristic tech company known for making some amazing personal
+                tech devices.
+                </div>
+                </div>
+                
+              <div class="text_cursor"></div>
+            </div>
+            
+            
+            <div>
+              <a href="product.html">Buy NOW</a>
+            </div>
+            
+          </div>
+          <div class="insiders animate__animated animate__zoomIn animate__delay-1s">
+            <img src="images/2.png" class="startucks" />
+          </div>
+        </div>
+      </div>
+      <div>
+      <ul class="click">
+        <li>
+          <img src="images/2.png" onclick="imgSlider('images/2.png');changeCircleColor('#cd1f13')" />
+        </li>
+        <li>
+          <img src="images/3.png" onclick="imgSlider('images/3.png');changeCircleColor('#fede00')" />
+        </li>
+        <li><img src="images/4.png" onclick="imgSlider('images/4.png');changeCircleColor('#1df500')" /></li>
+        <li><img src="images/macbook_air.png" onclick="imgSlider('images/macbook_air.png');changeCircleColor('#0004e6')" /></li>
+      </ul>
+      </div>
+      <ul class="social animate__animated animate__bounceInUp animate__delay-2s">
+        <li>
+          <a href="#"><img src="images/fb.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/insta.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/twitter.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <div class="enquiry" id="enq-form">
+        <h3>Enquiry Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="First Name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Last name">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+    </div>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".startucks").src = anything;
+      }
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+    </script>
+  </body>
+</html>
